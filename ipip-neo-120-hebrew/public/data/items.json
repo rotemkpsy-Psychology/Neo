@@ -1,0 +1,1082 @@
+[
+  {
+    "id": 1,
+    "item300": 1,
+    "domain": "N",
+    "facet": "N1",
+    "key": 1,
+    "heb": "מודאג מדברים",
+    "eng": "Worry about things"
+  },
+  {
+    "id": 2,
+    "item300": 2,
+    "domain": "E",
+    "facet": "E1",
+    "key": 1,
+    "heb": "רוכש חברים בקלות",
+    "eng": "Make friends easily"
+  },
+  {
+    "id": 3,
+    "item300": 3,
+    "domain": "O",
+    "facet": "O1",
+    "key": 1,
+    "heb": "בעל דמיון פורה",
+    "eng": "Have a vivid imagination"
+  },
+  {
+    "id": 4,
+    "item300": 4,
+    "domain": "A",
+    "facet": "A1",
+    "key": 1,
+    "heb": "נותן אמון באחרים",
+    "eng": "Trust others"
+  },
+  {
+    "id": 5,
+    "item300": 5,
+    "domain": "C",
+    "facet": "C1",
+    "key": 1,
+    "heb": "משלים משימות בהצלחה",
+    "eng": "Complete tasks successfully"
+  },
+  {
+    "id": 6,
+    "item300": 6,
+    "domain": "N",
+    "facet": "N2",
+    "key": 1,
+    "heb": "כועס בקלות",
+    "eng": "Get angry easily"
+  },
+  {
+    "id": 7,
+    "item300": 7,
+    "domain": "E",
+    "facet": "E2",
+    "key": 1,
+    "heb": "אוהב מסיבות גדולות",
+    "eng": "Love large parties"
+  },
+  {
+    "id": 8,
+    "item300": 8,
+    "domain": "O",
+    "facet": "O2",
+    "key": 1,
+    "heb": "מאמין בחשיבות האמנות",
+    "eng": "Believe in the importance of art"
+  },
+  {
+    "id": 9,
+    "item300": 99,
+    "domain": "A",
+    "facet": "A2",
+    "key": -1,
+    "heb": "מנצל אחרים למטרותיי",
+    "eng": "Use others for my own ends"
+  },
+  {
+    "id": 10,
+    "item300": 40,
+    "domain": "C",
+    "facet": "C2",
+    "key": 1,
+    "heb": "אוהב לסדר",
+    "eng": "Like to tidy up"
+  },
+  {
+    "id": 11,
+    "item300": 11,
+    "domain": "N",
+    "facet": "N3",
+    "key": 1,
+    "heb": "לעיתים קרובות מרגיש עצוב",
+    "eng": "Often feel blue"
+  },
+  {
+    "id": 12,
+    "item300": 12,
+    "domain": "E",
+    "facet": "E3",
+    "key": 1,
+    "heb": "לוקח אחריות",
+    "eng": "Take charge"
+  },
+  {
+    "id": 13,
+    "item300": 13,
+    "domain": "O",
+    "facet": "O3",
+    "key": 1,
+    "heb": "חווה את הרגשות שלי באופן חזק",
+    "eng": "Experience my emotions intensely"
+  },
+  {
+    "id": 14,
+    "item300": 74,
+    "domain": "A",
+    "facet": "A3",
+    "key": 1,
+    "heb": "אוהב לעזור לאחרים",
+    "eng": "Love to help others"
+  },
+  {
+    "id": 15,
+    "item300": 45,
+    "domain": "C",
+    "facet": "C3",
+    "key": 1,
+    "heb": "עומד בהבטחותיי",
+    "eng": "Keep my promises"
+  },
+  {
+    "id": 16,
+    "item300": 76,
+    "domain": "N",
+    "facet": "N4",
+    "key": 1,
+    "heb": "מרגיש קושי להתקרב לאחרים",
+    "eng": "Find it difficult to approach others"
+  },
+  {
+    "id": 17,
+    "item300": 17,
+    "domain": "E",
+    "facet": "E4",
+    "key": 1,
+    "heb": "תמיד עסוק",
+    "eng": "Am always busy"
+  },
+  {
+    "id": 18,
+    "item300": 18,
+    "domain": "O",
+    "facet": "O4",
+    "key": 1,
+    "heb": "מעדיף מגוון על פני שגרה",
+    "eng": "Prefer variety to routine"
+  },
+  {
+    "id": 19,
+    "item300": 169,
+    "domain": "A",
+    "facet": "A4",
+    "key": -1,
+    "heb": "אוהב מאבק טוב",
+    "eng": "Love a good fight"
+  },
+  {
+    "id": 20,
+    "item300": 50,
+    "domain": "C",
+    "facet": "C4",
+    "key": 1,
+    "heb": "עובד קשה",
+    "eng": "Work hard"
+  },
+  {
+    "id": 21,
+    "item300": 111,
+    "domain": "N",
+    "facet": "N5",
+    "key": 1,
+    "heb": "אוהב לזלול",
+    "eng": "Go on binges"
+  },
+  {
+    "id": 22,
+    "item300": 22,
+    "domain": "E",
+    "facet": "E5",
+    "key": 1,
+    "heb": "אוהב התרגשות",
+    "eng": "Love excitement"
+  },
+  {
+    "id": 23,
+    "item300": 53,
+    "domain": "O",
+    "facet": "O5",
+    "key": 1,
+    "heb": "אוהב לקרוא חומר מאתגר",
+    "eng": "Love to read challenging material"
+  },
+  {
+    "id": 24,
+    "item300": 144,
+    "domain": "A",
+    "facet": "A5",
+    "key": -1,
+    "heb": "מאמין שאני מוצלח מאחרים",
+    "eng": "Believe that I am better than others"
+  },
+  {
+    "id": 25,
+    "item300": 55,
+    "domain": "C",
+    "facet": "C5",
+    "key": 1,
+    "heb": "תמיד מוכן",
+    "eng": "Am always prepared"
+  },
+  {
+    "id": 26,
+    "item300": 26,
+    "domain": "N",
+    "facet": "N6",
+    "key": 1,
+    "heb": "נכנס לפאניקה במהירות",
+    "eng": "Panic easily"
+  },
+  {
+    "id": 27,
+    "item300": 27,
+    "domain": "E",
+    "facet": "E6",
+    "key": 1,
+    "heb": "מפיץ שמחה",
+    "eng": "Radiate joy"
+  },
+  {
+    "id": 28,
+    "item300": 28,
+    "domain": "O",
+    "facet": "O6",
+    "key": 1,
+    "heb": "נוטה להצביע למועמדים ממפלגות ליברליות",
+    "eng": "Tend to vote for liberal political candidates"
+  },
+  {
+    "id": 29,
+    "item300": 29,
+    "domain": "A",
+    "facet": "A6",
+    "key": 1,
+    "heb": "יש לי סימפטיה למחוסרי הבית",
+    "eng": "Sympathize with the homeless"
+  },
+  {
+    "id": 30,
+    "item300": 120,
+    "domain": "C",
+    "facet": "C6",
+    "key": -1,
+    "heb": "קופץ לדברים בלי לחשוב",
+    "eng": "Jump into things without thinking"
+  },
+  {
+    "id": 31,
+    "item300": 31,
+    "domain": "N",
+    "facet": "N1",
+    "key": 1,
+    "heb": "מפחד מהגרוע מכל",
+    "eng": "Fear for the worst"
+  },
+  {
+    "id": 32,
+    "item300": 62,
+    "domain": "E",
+    "facet": "E1",
+    "key": 1,
+    "heb": "מרגיש בנוח עם אנשים",
+    "eng": "Feel comfortable around people"
+  },
+  {
+    "id": 33,
+    "item300": 33,
+    "domain": "O",
+    "facet": "O1",
+    "key": 1,
+    "heb": "נהנה להפליג בדמיון הפרוע",
+    "eng": "Enjoy wild flights of fantasy"
+  },
+  {
+    "id": 34,
+    "item300": 34,
+    "domain": "A",
+    "facet": "A1",
+    "key": 1,
+    "heb": "מאמין שלאחרים יש כוונות טובות",
+    "eng": "Believe that others have good intentions"
+  },
+  {
+    "id": 35,
+    "item300": 35,
+    "domain": "C",
+    "facet": "C1",
+    "key": 1,
+    "heb": "מצטיין במה שאני עושה",
+    "eng": "Excel in what I do"
+  },
+  {
+    "id": 36,
+    "item300": 36,
+    "domain": "N",
+    "facet": "N2",
+    "key": 1,
+    "heb": "מתעצבן בקלות",
+    "eng": "Get irritated easily"
+  },
+  {
+    "id": 37,
+    "item300": 37,
+    "domain": "E",
+    "facet": "E2",
+    "key": 1,
+    "heb": "מדבר עם הרבה אנשים שונים במסיבות",
+    "eng": "Talk to a lot of different people at parties"
+  },
+  {
+    "id": 38,
+    "item300": 68,
+    "domain": "O",
+    "facet": "O2",
+    "key": 1,
+    "heb": "רואה את היופי במקום שבו אחרים לא רואים",
+    "eng": "See beauty in things that others might not notice"
+  },
+  {
+    "id": 39,
+    "item300": 159,
+    "domain": "A",
+    "facet": "A2",
+    "key": -1,
+    "heb": "מרמה על מנת להתקדם",
+    "eng": "Cheat to get ahead"
+  },
+  {
+    "id": 40,
+    "item300": 160,
+    "domain": "C",
+    "facet": "C2",
+    "key": -1,
+    "heb": "נוטה לשכוח להחזיר דברים למקומם",
+    "eng": "Often forget to put things back in their proper place"
+  },
+  {
+    "id": 41,
+    "item300": 41,
+    "domain": "N",
+    "facet": "N3",
+    "key": 1,
+    "heb": "לא מרגיש שבע רצון לגבי עצמי",
+    "eng": "Dislike myself"
+  },
+  {
+    "id": 42,
+    "item300": 42,
+    "domain": "E",
+    "facet": "E3",
+    "key": 1,
+    "heb": "מנסה להוביל אחרים",
+    "eng": "Try to lead others"
+  },
+  {
+    "id": 43,
+    "item300": 43,
+    "domain": "O",
+    "facet": "O3",
+    "key": 1,
+    "heb": "מרגיש את מה שאחרים מרגישים",
+    "eng": "Feel others' emotions"
+  },
+  {
+    "id": 44,
+    "item300": 104,
+    "domain": "A",
+    "facet": "A3",
+    "key": 1,
+    "heb": "אני מוטרד לגבי אחרים",
+    "eng": "Am concerned about others"
+  },
+  {
+    "id": 45,
+    "item300": 105,
+    "domain": "C",
+    "facet": "C3",
+    "key": 1,
+    "heb": "אומר את האמת",
+    "eng": "Tell the truth"
+  },
+  {
+    "id": 46,
+    "item300": 106,
+    "domain": "N",
+    "facet": "N4",
+    "key": 1,
+    "heb": "מפחד למשוך את תשומת הלב אליי",
+    "eng": "Am afraid to draw attention to myself"
+  },
+  {
+    "id": 47,
+    "item300": 47,
+    "domain": "E",
+    "facet": "E4",
+    "key": 1,
+    "heb": "כל הזמן בתנועה",
+    "eng": "Am always on the go"
+  },
+  {
+    "id": 48,
+    "item300": 138,
+    "domain": "O",
+    "facet": "O4",
+    "key": -1,
+    "heb": "מעדיף לדבוק בדברים שאני יודע",
+    "eng": "Prefer to stick with things that I know"
+  },
+  {
+    "id": 49,
+    "item300": 199,
+    "domain": "A",
+    "facet": "A4",
+    "key": -1,
+    "heb": "צועק על אחרים",
+    "eng": "Yell at people"
+  },
+  {
+    "id": 50,
+    "item300": 140,
+    "domain": "C",
+    "facet": "C4",
+    "key": 1,
+    "heb": "עושה יותר ממה שמצופה ממני",
+    "eng": "Do more than what's expected of me"
+  },
+  {
+    "id": 51,
+    "item300": 171,
+    "domain": "N",
+    "facet": "N5",
+    "key": -1,
+    "heb": "לעיתים רחוקות מפנק את עצמי יתר על המידה",
+    "eng": "Rarely overindulge"
+  },
+  {
+    "id": 52,
+    "item300": 52,
+    "domain": "E",
+    "facet": "E5",
+    "key": 1,
+    "heb": "מחפש הרפתקאות",
+    "eng": "Seek adventure"
+  },
+  {
+    "id": 53,
+    "item300": 203,
+    "domain": "O",
+    "facet": "O5",
+    "key": -1,
+    "heb": "נמנע מדיונים פילוסופיים",
+    "eng": "Avoid philosophical discussions"
+  },
+  {
+    "id": 54,
+    "item300": 174,
+    "domain": "A",
+    "facet": "A5",
+    "key": -1,
+    "heb": "מאוד מעריך את עצמי",
+    "eng": "Think highly of myself"
+  },
+  {
+    "id": 55,
+    "item300": 145,
+    "domain": "C",
+    "facet": "C5",
+    "key": 1,
+    "heb": "מבצע את התוכניות שלי",
+    "eng": "Carry out my plans"
+  },
+  {
+    "id": 56,
+    "item300": 56,
+    "domain": "N",
+    "facet": "N6",
+    "key": 1,
+    "heb": "מוצף בעקבות אירועים שונים",
+    "eng": "Become overwhelmed by events"
+  },
+  {
+    "id": 57,
+    "item300": 57,
+    "domain": "E",
+    "facet": "E6",
+    "key": 1,
+    "heb": "עושה חיים",
+    "eng": "Have a lot of fun"
+  },
+  {
+    "id": 58,
+    "item300": 58,
+    "domain": "O",
+    "facet": "O6",
+    "key": 1,
+    "heb": "מאמין שאין טוב ורע מוחלטים",
+    "eng": "Believe that there is no absolute right or wrong"
+  },
+  {
+    "id": 59,
+    "item300": 59,
+    "domain": "A",
+    "facet": "A6",
+    "key": 1,
+    "heb": "חש סימפטיה לאלו שבמצב גרוע ממני",
+    "eng": "Feel sympathy for those who are worse off than myself"
+  },
+  {
+    "id": 60,
+    "item300": 150,
+    "domain": "C",
+    "facet": "C6",
+    "key": -1,
+    "heb": "עושה החלטות פזיזות",
+    "eng": "Make rash decisions"
+  },
+  {
+    "id": 61,
+    "item300": 61,
+    "domain": "N",
+    "facet": "N1",
+    "key": 1,
+    "heb": "מפחד מהרבה דברים",
+    "eng": "Am afraid of many things"
+  },
+  {
+    "id": 62,
+    "item300": 212,
+    "domain": "E",
+    "facet": "E1",
+    "key": -1,
+    "heb": "נמנע מקשרים עם אנשים",
+    "eng": "Avoid contacts with others"
+  },
+  {
+    "id": 63,
+    "item300": 63,
+    "domain": "O",
+    "facet": "O1",
+    "key": 1,
+    "heb": "אוהב לחלום בהקיץ",
+    "eng": "Love to daydream"
+  },
+  {
+    "id": 64,
+    "item300": 64,
+    "domain": "A",
+    "facet": "A1",
+    "key": 1,
+    "heb": "מאמין במה שאנשים אומרים",
+    "eng": "Trust what people say"
+  },
+  {
+    "id": 65,
+    "item300": 65,
+    "domain": "C",
+    "facet": "C1",
+    "key": 1,
+    "heb": "מתמודד עם משימות בקלות",
+    "eng": "Handle tasks smoothly"
+  },
+  {
+    "id": 66,
+    "item300": 126,
+    "domain": "N",
+    "facet": "N2",
+    "key": 1,
+    "heb": "כועס עד איבוד שליטה",
+    "eng": "Lose my temper"
+  },
+  {
+    "id": 67,
+    "item300": 157,
+    "domain": "E",
+    "facet": "E2",
+    "key": -1,
+    "heb": "מעדיף להיות לבד",
+    "eng": "Prefer to be alone"
+  },
+  {
+    "id": 68,
+    "item300": 188,
+    "domain": "O",
+    "facet": "O2",
+    "key": -1,
+    "heb": "לא אוהב שירה",
+    "eng": "Do not like poetry"
+  },
+  {
+    "id": 69,
+    "item300": 249,
+    "domain": "A",
+    "facet": "A2",
+    "key": -1,
+    "heb": "מנצל אחרים",
+    "eng": "Take advantage of others"
+  },
+  {
+    "id": 70,
+    "item300": 190,
+    "domain": "C",
+    "facet": "C2",
+    "key": -1,
+    "heb": "משאיר בלאגן בחדר שלי",
+    "eng": "Leave a mess in my room"
+  },
+  {
+    "id": 71,
+    "item300": 71,
+    "domain": "N",
+    "facet": "N3",
+    "key": 1,
+    "heb": "נוטה להרגיש מדוכא",
+    "eng": "Am often down in the dumps"
+  },
+  {
+    "id": 72,
+    "item300": 132,
+    "domain": "E",
+    "facet": "E3",
+    "key": 1,
+    "heb": "משתלט על דברים",
+    "eng": "Take control of things"
+  },
+  {
+    "id": 73,
+    "item300": 223,
+    "domain": "O",
+    "facet": "O3",
+    "key": -1,
+    "heb": "לעיתים רחוקות שם לב לתגובותיי הרגשיות",
+    "eng": "Rarely notice my emotional reactions"
+  },
+  {
+    "id": 74,
+    "item300": 194,
+    "domain": "A",
+    "facet": "A3",
+    "key": -1,
+    "heb": "לא מוטרד מרגשות של אחרים",
+    "eng": "Am indifferent to the feelings of others"
+  },
+  {
+    "id": 75,
+    "item300": 165,
+    "domain": "C",
+    "facet": "C3",
+    "key": -1,
+    "heb": "שובר את החוקים",
+    "eng": "Break rules"
+  },
+  {
+    "id": 76,
+    "item300": 136,
+    "domain": "N",
+    "facet": "N4",
+    "key": 1,
+    "heb": "חש בנוח רק במחיצת חברים",
+    "eng": "Only feel comfortable with friends"
+  },
+  {
+    "id": 77,
+    "item300": 77,
+    "domain": "E",
+    "facet": "E4",
+    "key": 1,
+    "heb": "עושה הרבה בזמן הפנוי שלי",
+    "eng": "Do a lot in my spare time"
+  },
+  {
+    "id": 78,
+    "item300": 168,
+    "domain": "O",
+    "facet": "O4",
+    "key": -1,
+    "heb": "לא אוהב שינויים",
+    "eng": "Dislike changes"
+  },
+  {
+    "id": 79,
+    "item300": 229,
+    "domain": "A",
+    "facet": "A4",
+    "key": -1,
+    "heb": "מעליב אנשים",
+    "eng": "Insult people"
+  },
+  {
+    "id": 80,
+    "item300": 260,
+    "domain": "C",
+    "facet": "C4",
+    "key": -1,
+    "heb": "עובד רק כמה שאני צריך",
+    "eng": "Do just enough work to get by"
+  },
+  {
+    "id": 81,
+    "item300": 201,
+    "domain": "N",
+    "facet": "N5",
+    "key": -1,
+    "heb": "לא מתפתה בקלות",
+    "eng": "Easily resist temptations"
+  },
+  {
+    "id": 82,
+    "item300": 142,
+    "domain": "E",
+    "facet": "E5",
+    "key": 1,
+    "heb": "נהנה להיות חסר מעצורים",
+    "eng": "Enjoy being reckless"
+  },
+  {
+    "id": 83,
+    "item300": 233,
+    "domain": "O",
+    "facet": "O5",
+    "key": -1,
+    "heb": "מתקשה להבין רעיונות מופשטים",
+    "eng": "Have difficulty understanding abstract ideas"
+  },
+  {
+    "id": 84,
+    "item300": 204,
+    "domain": "A",
+    "facet": "A5",
+    "key": -1,
+    "heb": "יש לי דעה טובה לגבי עצמי",
+    "eng": "Have a high opinion of myself"
+  },
+  {
+    "id": 85,
+    "item300": 205,
+    "domain": "C",
+    "facet": "C5",
+    "key": -1,
+    "heb": "מבזבז את זמני",
+    "eng": "Waste my time"
+  },
+  {
+    "id": 86,
+    "item300": 86,
+    "domain": "N",
+    "facet": "N6",
+    "key": 1,
+    "heb": "מרגיש שאני לא מסוגל להתמודד עם דברים",
+    "eng": "Feel that I'm unable to deal with things"
+  },
+  {
+    "id": 87,
+    "item300": 147,
+    "domain": "E",
+    "facet": "E6",
+    "key": 1,
+    "heb": "אוהב את החיים",
+    "eng": "Love life"
+  },
+  {
+    "id": 88,
+    "item300": 148,
+    "domain": "O",
+    "facet": "O6",
+    "key": -1,
+    "heb": "נוטה לתמוך במפלגות שמרניות",
+    "eng": "Tend to vote for conservative political candidates"
+  },
+  {
+    "id": 89,
+    "item300": 149,
+    "domain": "A",
+    "facet": "A6",
+    "key": -1,
+    "heb": "לא מתעניין בבעיות של אנשים אחרים",
+    "eng": "Am not interested in other people's problems"
+  },
+  {
+    "id": 90,
+    "item300": 210,
+    "domain": "C",
+    "facet": "C6",
+    "key": -1,
+    "heb": "ממהר להיכנס לדברים",
+    "eng": "Rush into things"
+  },
+  {
+    "id": 91,
+    "item300": 91,
+    "domain": "N",
+    "facet": "N1",
+    "key": 1,
+    "heb": "נכנס ללחץ בקלות",
+    "eng": "Get stressed out easily"
+  },
+  {
+    "id": 92,
+    "item300": 272,
+    "domain": "E",
+    "facet": "E1",
+    "key": -1,
+    "heb": "שומר את האחרים במרחק ממני",
+    "eng": "Keep others at a distance"
+  },
+  {
+    "id": 93,
+    "item300": 93,
+    "domain": "O",
+    "facet": "O1",
+    "key": 1,
+    "heb": "אוהב לאבד את עצמי במחשבות",
+    "eng": "Like to get lost in thought"
+  },
+  {
+    "id": 94,
+    "item300": 184,
+    "domain": "A",
+    "facet": "A1",
+    "key": -1,
+    "heb": "לא נותן אמון באנשים",
+    "eng": "Distrust people"
+  },
+  {
+    "id": 95,
+    "item300": 155,
+    "domain": "C",
+    "facet": "C1",
+    "key": 1,
+    "heb": "יודע כיצד לגרום שדברים ייעשו",
+    "eng": "Know how to get things done"
+  },
+  {
+    "id": 96,
+    "item300": 216,
+    "domain": "N",
+    "facet": "N2",
+    "key": -1,
+    "heb": "לא ניתן להציק לי בקלות",
+    "eng": "Am not easily annoyed"
+  },
+  {
+    "id": 97,
+    "item300": 247,
+    "domain": "E",
+    "facet": "E2",
+    "key": -1,
+    "heb": "נמנע מקהלים גדולים",
+    "eng": "Avoid crowds"
+  },
+  {
+    "id": 98,
+    "item300": 218,
+    "domain": "O",
+    "facet": "O2",
+    "key": -1,
+    "heb": "לא אוהב ללכת למוזיאונים של אמנות",
+    "eng": "Do not enjoy going to art museums"
+  },
+  {
+    "id": 99,
+    "item300": 279,
+    "domain": "A",
+    "facet": "A2",
+    "key": -1,
+    "heb": "מפריע לתוכניות של אחרים",
+    "eng": "Obstruct others' plans"
+  },
+  {
+    "id": 100,
+    "item300": 220,
+    "domain": "C",
+    "facet": "C2",
+    "key": -1,
+    "heb": "משאיר את החפצים שלי מסביב",
+    "eng": "Leave my belongings around"
+  },
+  {
+    "id": 101,
+    "item300": 251,
+    "domain": "N",
+    "facet": "N3",
+    "key": -1,
+    "heb": "מרגיש נוח עם עצמי",
+    "eng": "Feel comfortable with myself"
+  },
+  {
+    "id": 102,
+    "item300": 162,
+    "domain": "E",
+    "facet": "E3",
+    "key": -1,
+    "heb": "מחכה שאחרים יובילו",
+    "eng": "Wait for others to lead the way"
+  },
+  {
+    "id": 103,
+    "item300": 283,
+    "domain": "O",
+    "facet": "O3",
+    "key": -1,
+    "heb": "לא מבין אנשים שהופכים רגשניים",
+    "eng": "Don't understand people who get emotional"
+  },
+  {
+    "id": 104,
+    "item300": 284,
+    "domain": "A",
+    "facet": "A3",
+    "key": -1,
+    "heb": "אין לי זמן לאחרים",
+    "eng": "Take no time for others"
+  },
+  {
+    "id": 105,
+    "item300": 195,
+    "domain": "C",
+    "facet": "C3",
+    "key": -1,
+    "heb": "לא עומד בהבטחות",
+    "eng": "Break my promises"
+  },
+  {
+    "id": 106,
+    "item300": 256,
+    "domain": "N",
+    "facet": "N4",
+    "key": -1,
+    "heb": "לא מוטרד ממצבים חברתיים קשים",
+    "eng": "Am not bothered by difficult social situations"
+  },
+  {
+    "id": 107,
+    "item300": 167,
+    "domain": "E",
+    "facet": "E4",
+    "key": -1,
+    "heb": "לוקח דברים בקלות",
+    "eng": "Like to take it easy"
+  },
+  {
+    "id": 108,
+    "item300": 288,
+    "domain": "O",
+    "facet": "O4",
+    "key": -1,
+    "heb": "אוהב ללכת בדרכים קונבנציונאליות",
+    "eng": "Am attached to conventional ways"
+  },
+  {
+    "id": 109,
+    "item300": 259,
+    "domain": "A",
+    "facet": "A4",
+    "key": -1,
+    "heb": "מחזיר לאחרים",
+    "eng": "Get back at others"
+  },
+  {
+    "id": 110,
+    "item300": 290,
+    "domain": "C",
+    "facet": "C4",
+    "key": -1,
+    "heb": "משקיע מעט זמן ומאמץ בעבודתי",
+    "eng": "Put little time and effort into my work"
+  },
+  {
+    "id": 111,
+    "item300": 231,
+    "domain": "N",
+    "facet": "N5",
+    "key": -1,
+    "heb": "שולט בדחפים שלי",
+    "eng": "Am able to control my cravings"
+  },
+  {
+    "id": 112,
+    "item300": 172,
+    "domain": "E",
+    "facet": "E5",
+    "key": 1,
+    "heb": "מתנהג באופן פרוע ומשוגע",
+    "eng": "Act wild and crazy"
+  },
+  {
+    "id": 113,
+    "item300": 263,
+    "domain": "O",
+    "facet": "O5",
+    "key": -1,
+    "heb": "לא מתעניין בדיונים תיאורטיים",
+    "eng": "Am not interested in theoretical discussions"
+  },
+  {
+    "id": 114,
+    "item300": 264,
+    "domain": "A",
+    "facet": "A5",
+    "key": -1,
+    "heb": "מתרברב לגבי מעלותיי",
+    "eng": "Boast about my virtues"
+  },
+  {
+    "id": 115,
+    "item300": 265,
+    "domain": "C",
+    "facet": "C5",
+    "key": -1,
+    "heb": "מתקשה להתחיל מטלות",
+    "eng": "Have difficulty starting tasks"
+  },
+  {
+    "id": 116,
+    "item300": 176,
+    "domain": "N",
+    "facet": "N6",
+    "key": -1,
+    "heb": "נשאר רגוע לנוכח לחצים",
+    "eng": "Remain calm under pressure"
+  },
+  {
+    "id": 117,
+    "item300": 177,
+    "domain": "E",
+    "facet": "E6",
+    "key": 1,
+    "heb": "מסתכל על הצד הבהיר של החיים",
+    "eng": "Look at the bright side of life"
+  },
+  {
+    "id": 118,
+    "item300": 268,
+    "domain": "O",
+    "facet": "O6",
+    "key": -1,
+    "heb": "מאמין שצריך להיות קשוחים יותר עם פושעים",
+    "eng": "Believe that we should be tough on crime"
+  },
+  {
+    "id": 119,
+    "item300": 239,
+    "domain": "A",
+    "facet": "A6",
+    "key": -1,
+    "heb": "מנסה לא לחשוב על הנזקקים",
+    "eng": "Try not to think about the needy"
+  },
+  {
+    "id": 120,
+    "item300": 270,
+    "domain": "C",
+    "facet": "C6",
+    "key": -1,
+    "heb": "פועל בלי לחשוב",
+    "eng": "Act without thinking"
+  }
+]

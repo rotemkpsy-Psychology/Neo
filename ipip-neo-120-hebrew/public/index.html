@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>שאלון אישיות IPIP-NEO-120</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800&family=Frank+Ruhl+Libre:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg:#f8f7f4;--surface:#fff;--text:#1a1a2e;--muted:#6b6b80;--border:#e2e0d8;
+  --accent:#2d5a7b;--accent-light:#e8f0f6;
+  --N:#8b5cf6;--E:#e87b35;--O:#10a37f;--A:#d63384;--C:#2563eb;
+  --low:#b91c1c;--avg:#6b7280;--high:#0369a1;
+  --radius:12px;--shadow:0 2px 12px rgba(0,0,0,0.06);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Rubik',sans-serif;background:var(--bg);color:var(--text);line-height:1.6;min-height:100vh}
+.container{max-width:760px;margin:0 auto;padding:16px}
+.app-header{text-align:center;padding:32px 16px 24px}
+.app-header h1{font-family:'Frank Ruhl Libre',serif;font-size:28px;font-weight:700;color:var(--accent);letter-spacing:-.5px}
+.app-header .sub{font-size:14px;color:var(--muted);margin-top:4px}
+.screen{display:none}.screen.active{display:block;animation:fadeIn .35s ease}
+@keyframes fadeIn{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
+.card{background:var(--surface);border-radius:var(--radius);padding:28px;box-shadow:var(--shadow);border:1px solid var(--border)}
+.card h2{font-size:20px;margin-bottom:14px;font-weight:600}
+.card p{font-size:14px;color:var(--muted);margin-bottom:14px;line-height:1.8}
+.fg{margin-bottom:18px}
+.fg label{display:block;font-size:14px;font-weight:600;margin-bottom:6px}
+.fg .hint{font-size:12px;color:var(--muted);margin-top:2px}
+.sex-btns{display:flex;gap:10px}
+.sex-btn{flex:1;padding:12px;border:2px solid var(--border);border-radius:var(--radius);background:var(--surface);font-family:inherit;font-size:15px;font-weight:500;cursor:pointer;transition:all .2s}
+.sex-btn:hover{border-color:var(--accent)}.sex-btn.sel{border-color:var(--accent);background:var(--accent-light);color:var(--accent);font-weight:700}
+input[type=number],input[type=email],input[type=text]{padding:10px 14px;border:2px solid var(--border);border-radius:var(--radius);font-family:inherit;font-size:14px;width:100%}
+input[type=number]{width:120px;direction:ltr;text-align:center}
+input:focus{outline:none;border-color:var(--accent)}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:14px 36px;border:none;border-radius:var(--radius);font-family:inherit;font-size:16px;font-weight:600;cursor:pointer;transition:all .2s}
+.btn-p{background:var(--accent);color:#fff}.btn-p:hover{background:#1e4a68;transform:translateY(-1px)}.btn-p:disabled{opacity:.4;cursor:not-allowed;transform:none}
+.btn-s{background:var(--surface);color:var(--text);border:2px solid var(--border);padding:12px 28px;font-size:14px}.btn-s:hover{border-color:var(--accent)}
+.scale-legend{display:grid;grid-template-columns:repeat(5,1fr);gap:4px;margin:14px 0;padding:12px;background:#f5f4f0;border-radius:8px;font-size:11px;text-align:center;color:var(--muted)}
+.scale-legend b{display:block;font-size:18px;color:var(--text);font-weight:700}
+/* Progress */
+.pbar-wrap{position:sticky;top:0;z-index:10;background:var(--bg);padding:8px 0}
+.pbar-outer{height:6px;background:var(--border);border-radius:3px;overflow:hidden}
+.pbar-inner{height:100%;background:var(--accent);border-radius:3px;transition:width .4s ease}
+.pbar-text{display:flex;justify-content:space-between;font-size:12px;color:var(--muted);margin-top:4px}
+/* Questions */
+.qcard{background:var(--surface);border-radius:var(--radius);padding:16px 20px;margin-bottom:8px;box-shadow:0 1px 4px rgba(0,0,0,.04);border:1px solid var(--border);transition:border-color .2s}
+.qcard.done{border-color:#c8e0c8}
+.qcard .qn{font-size:12px;color:var(--muted);font-weight:500;margin-bottom:4px}
+.qcard .qt{font-size:16px;font-weight:500;margin-bottom:12px;line-height:1.5}
+.qopts{display:flex;gap:6px;direction:ltr}
+.qo{flex:1;padding:8px 4px;border:2px solid var(--border);border-radius:8px;background:var(--surface);font-family:inherit;font-size:12px;font-weight:500;cursor:pointer;transition:all .15s;text-align:center;line-height:1.3;color:var(--muted)}
+.qo:hover{border-color:var(--accent);color:var(--text)}.qo.sel{border-color:var(--accent);background:var(--accent);color:#fff;font-weight:700}
+.page-nav{display:flex;justify-content:space-between;padding:20px 0;gap:12px}
+/* Results */
+.rh{text-align:center;padding:24px 0}
+.rh h2{font-family:'Frank Ruhl Libre',serif;font-size:24px;font-weight:700;color:var(--accent)}
+.rh .rm{font-size:13px;color:var(--muted);margin-top:4px}
+.dcard{background:var(--surface);border-radius:var(--radius);padding:20px;margin-bottom:16px;box-shadow:var(--shadow);border:1px solid var(--border)}
+.dcard-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:12px}
+.dcard-name{font-size:18px;font-weight:700}
+.badge{font-size:12px;font-weight:700;padding:4px 14px;border-radius:20px}
+.dcard-scores{display:flex;gap:16px;font-size:13px;color:var(--muted);margin-bottom:10px;flex-wrap:wrap}
+.dcard-scores strong{color:var(--text)}
+.bar-w{height:10px;background:#eee;border-radius:5px;overflow:hidden;margin-bottom:16px}
+.bar-f{height:100%;border-radius:5px;transition:width .8s ease}
+.frow{display:grid;grid-template-columns:32px 1fr 100px 50px 50px;align-items:center;gap:8px;padding:6px 10px;border-radius:8px;font-size:13px;background:#fafaf8;margin-bottom:4px}
+.frow .fk{font-weight:700;font-size:12px}.frow .fn{color:var(--text)}
+.fbar-w{height:6px;background:#e5e5e0;border-radius:3px;overflow:hidden}.fbar-f{height:100%;border-radius:3px;transition:width .6s ease}
+.frow .fr{text-align:center;font-weight:600;font-size:12px}.frow .ft{text-align:center;font-weight:700;font-size:12px;border-radius:4px;padding:2px 0}
+.lv-low{color:var(--low)}.lv-avg{color:var(--avg)}.lv-high{color:var(--high)}
+.bg-low{background:#fef2f2;color:var(--low)}.bg-avg{background:#f3f4f6;color:var(--avg)}.bg-high{background:#eff6ff;color:var(--high)}
+.exp{margin-top:24px;padding:20px;background:var(--accent-light);border-radius:var(--radius);border:1px solid #c8dce8}
+.exp h3{font-size:15px;color:var(--accent);margin-bottom:12px}
+.etbl{width:100%;border-collapse:collapse;font-size:13px}
+.etbl th,.etbl td{padding:6px 8px;text-align:center;border:1px solid #d1dde6}
+.etbl th{background:#d4e4ef;font-weight:600}.etbl td{background:#fff}
+.disc{text-align:center;font-size:11px;color:var(--muted);margin-top:20px;padding:16px;line-height:1.8}
+.btn-restart{display:block;margin:24px auto;padding:12px 32px}
+.email-status{margin-top:16px;padding:12px 16px;border-radius:8px;font-size:14px;font-weight:500;text-align:center}
+.email-ok{background:#ecfdf5;color:#065f46;border:1px solid #a7f3d0}
+.email-err{background:#fef2f2;color:#991b1b;border:1px solid #fecaca}
+.email-loading{background:#eff6ff;color:#1e40af;border:1px solid #bfdbfe}
+@media(max-width:600px){.frow{grid-template-columns:28px 1fr 60px 40px 40px;font-size:12px;gap:4px;padding:5px 6px}.qo{font-size:11px;padding:6px 2px}.container{padding:10px}.dcard-scores{font-size:12px;gap:8px}}
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="app-header">
+    <h1>שאלון אישיות IPIP-NEO-120</h1>
+    <div class="sub">מבוסס על מודל חמשת הגורמים הגדולים (Big Five)</div>
+  </div>
+
+  <!-- ===== WELCOME ===== -->
+  <div id="scr-welcome" class="screen active">
+    <div class="card">
+      <h2>ברוכים הבאים</h2>
+      <p>שאלון זה מודד את חמשת הממדים המרכזיים של האישיות ו-30 תת-ממדים באמצעות 120 היגדים קצרים. אנא ציינו עד כמה כל היגד מתאר אתכם <strong>כפי שאתם כיום</strong>. אין תשובות נכונות או שגויות.</p>
+      <div class="scale-legend">
+        <div><b>1</b>לא מדויק</div><div><b>2</b>די לא מדויק</div>
+        <div><b>3</b>לפעמים כן לפעמים לא</div><div><b>4</b>די מדויק</div><div><b>5</b>מאוד מדויק</div>
+      </div>
+
+      <div class="fg">
+        <label>שם הנבדק/ת</label>
+        <input type="text" id="inp-name" placeholder="שם מלא">
+      </div>
+      <div class="fg">
+        <label>מין</label>
+        <div class="sex-btns">
+          <button class="sex-btn" data-sex="M" onclick="pickSex('M')">זכר</button>
+          <button class="sex-btn" data-sex="F" onclick="pickSex('F')">נקבה</button>
+        </div>
+      </div>
+      <div class="fg">
+        <label>גיל</label>
+        <input type="number" id="inp-age" min="10" max="95" placeholder="גיל">
+      </div>
+      <div class="fg">
+        <label>מייל מאבחן/ת (חובה)</label>
+        <input type="email" id="inp-email-assessor" placeholder="assessor@example.com" dir="ltr">
+        <div class="hint">התוצאות יישלחו לכתובת זו</div>
+      </div>
+      <div class="fg">
+        <label>מייל נבדק/ת (רשות)</label>
+        <input type="email" id="inp-email-respondent" placeholder="respondent@example.com" dir="ltr">
+        <div class="hint">אם ימולא, עותק של התוצאות יישלח גם לנבדק/ת</div>
+      </div>
+
+      <div style="text-align:center;margin-top:24px">
+        <button class="btn btn-p" id="btn-start" onclick="startQuiz()" disabled>התחל שאלון ←</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== QUIZ ===== -->
+  <div id="scr-quiz" class="screen">
+    <div class="pbar-wrap">
+      <div class="pbar-outer"><div class="pbar-inner" id="pbar"></div></div>
+      <div class="pbar-text"><span id="ptxt-n">0/120</span><span id="ptxt-p">0%</span></div>
+    </div>
+    <div id="q-container"></div>
+    <div class="page-nav">
+      <button class="btn btn-s" id="btn-prev" onclick="goPrev()">→ הקודם</button>
+      <button class="btn btn-p" id="btn-next" onclick="goNext()">הבא ←</button>
+    </div>
+  </div>
+
+  <!-- ===== RESULTS ===== -->
+  <div id="scr-results" class="screen">
+    <div class="rh">
+      <h2>תוצאות האבחון</h2>
+      <div class="rm" id="res-meta"></div>
+    </div>
+    <div id="res-container"></div>
+    <div id="email-status"></div>
+    <button class="btn btn-s btn-restart" onclick="restart()">מילוי שאלון חדש</button>
+  </div>
+</div>
+
+<script>
+let sex='',age=0,answers={},items=[],norms={},page=0,respondentName='',assessorEmail='',respondentEmail='';
+const PER_PAGE=20;
+const DI={
+  N:{h:'נוירוטיציזם',e:'Neuroticism',c:'var(--N)'},
+  E:{h:'מוחצנות',e:'Extraversion',c:'var(--E)'},
+  O:{h:'פתיחות לחוויה',e:'Openness',c:'var(--O)'},
+  A:{h:'מקובלות',e:'Agreeableness',c:'var(--A)'},
+  C:{h:'מצפוניות',e:'Conscientiousness',c:'var(--C)'}
+};
+const FH={
+  N1:'חרדה',N2:'כעס',N3:'דיכאוניות',N4:'מודעות עצמית',N5:'אי שליטה בדחפים',N6:'פגיעות',
+  E1:'ידידותיות',E2:'מינגלינג',E3:'אסרטיביות',E4:'אקטיביות',E5:'חיפוש ריגושים',E6:'שמחת חיים',
+  O1:'דמיון',O2:'אומנות וטבע',O3:'רגשות',O4:'גיוון והתנסויות',O5:'העמקה אינטלקטואלית',O6:'ליברליות',
+  A1:'אמון',A2:'מוסריות',A3:'אלטרואיזם',A4:'שיתוף פעולה',A5:'צניעות',A6:'אמפתיה',
+  C1:'אמונה ביכולת',C2:'סדר',C3:'רגשי חובה',C4:'הישגיות',C5:'משמעת עצמית',C6:'זהירות'
+};
+const OL=['לא מדויק','די לא מדויק','לפעמים','די מדויק','מאוד מדויק'];
+
+async function init(){
+  const[a,b]=await Promise.all([fetch('/data/items.json'),fetch('/data/norms.json')]);
+  items=await a.json(); norms=await b.json();
+}
+init();
+
+function pickSex(s){sex=s;document.querySelectorAll('.sex-btn').forEach(b=>b.classList.toggle('sel',b.dataset.sex===s));chk()}
+document.getElementById('inp-age').addEventListener('input',chk);
+document.getElementById('inp-email-assessor').addEventListener('input',chk);
+
+function chk(){
+  const a=parseInt(document.getElementById('inp-age').value);
+  const em=document.getElementById('inp-email-assessor').value.trim();
+  document.getElementById('btn-start').disabled=!(sex && a>=10 && a<=95 && em.includes('@'));
+}
+
+function startQuiz(){
+  age=parseInt(document.getElementById('inp-age').value);
+  respondentName=document.getElementById('inp-name').value.trim();
+  assessorEmail=document.getElementById('inp-email-assessor').value.trim();
+  respondentEmail=document.getElementById('inp-email-respondent').value.trim();
+  answers={};page=0;
+  show('scr-quiz');renderPage();
+}
+
+function renderPage(){
+  const s=page*PER_PAGE, e=Math.min(s+PER_PAGE,items.length), pi=items.slice(s,e), tp=Math.ceil(items.length/PER_PAGE);
+  let h='';
+  pi.forEach((it,i)=>{
+    const gi=s+i+1, done=answers[it.id]!=null;
+    h+=`<div class="qcard${done?' done':''}" id="qc-${it.id}">
+      <div class="qn">שאלה ${gi} מתוך 120</div>
+      <div class="qt">${it.heb}</div>
+      <div class="qopts">${[1,2,3,4,5].map(v=>`<button class="qo${answers[it.id]===v?' sel':''}" onclick="ans(${it.id},${v})">${v}<br><small>${OL[v-1]}</small></button>`).join('')}</div>
+    </div>`;
+  });
+  document.getElementById('q-container').innerHTML=h;
+  document.getElementById('btn-prev').style.display=page===0?'none':'';
+  document.getElementById('btn-next').textContent=page===tp-1?'לתוצאות ←':'הבא ←';
+  updProg();
+  window.scrollTo({top:0,behavior:'smooth'});
+}
+
+function ans(id,v){
+  answers[id]=v;
+  const c=document.getElementById('qc-'+id);
+  c.classList.add('done');
+  c.querySelectorAll('.qo').forEach(b=>{const bv=parseInt(b.textContent);b.classList.toggle('sel',bv===v)});
+  updProg();
+}
+
+function updProg(){
+  const n=Object.keys(answers).length, p=Math.round(n/120*100);
+  document.getElementById('pbar').style.width=p+'%';
+  document.getElementById('ptxt-n').textContent=n+'/120';
+  document.getElementById('ptxt-p').textContent=p+'%';
+}
+
+function goNext(){const tp=Math.ceil(items.length/PER_PAGE);if(page<tp-1){page++;renderPage()}else{showResults()}}
+function goPrev(){if(page>0){page--;renderPage()}}
+
+function ageGroup(a){if(a<=20)return'10-20';if(a<=40)return'21-40';if(a<=60)return'41-60';return'61-95'}
+function tScore(r,m,s){return s?50+10*(r-m)/s:50}
+function ncdf(z){const a1=.254829592,a2=-.284496736,a3=1.421413741,a4=-1.453152027,a5=1.061405429,p=.3275911;const sg=z<0?-1:1,x=Math.abs(z)/Math.sqrt(2),t=1/(1+p*x),y=1-(((((a5*t+a4)*t)+a3)*t+a2)*t+a1)*t*Math.exp(-x*x);return .5*(1+sg*y)}
+function tPct(t){return Math.round(ncdf((t-50)/10)*100)}
+function lvl(t){if(t>=55)return{h:'גבוה',c:'high'};if(t<=45)return{h:'נמוך',c:'low'};return{h:'ממוצע',c:'avg'}}
+
+function compute(){
+  const fs={},ds={N:0,E:0,O:0,A:0,C:0};
+  for(let d of'NEOCA')for(let i=1;i<=6;i++)fs[d+i]=0;
+  items.forEach(it=>{const r=answers[it.id]||3;const sc=it.key===1?r:(6-r);fs[it.facet]+=sc;ds[it.domain]+=sc});
+  return{fs,ds};
+}
+
+function showResults(){
+  const{fs,ds}=compute();
+  const nk=sex+'_'+ageGroup(age), ns=norms[nk];
+  if(!ns){alert('שגיאה בנורמות');return}
+  const sl=sex==='M'?'זכר':'נקבה';
+  document.getElementById('res-meta').innerHTML=`${respondentName?'<strong>'+respondentName+'</strong> — ':''}${sl}, גיל ${age} (נורמות: ${ageGroup(age)})`;
+
+  let html='';
+  const order=['O','C','E','A','N'];
+
+  order.forEach(dk=>{
+    const di=DI[dk],raw=ds[dk],dn=ns[dk],t=tScore(raw,dn.mean,dn.sd),p=tPct(t),lv=lvl(t);
+    html+=`<div class="dcard"><div class="dcard-head">
+      <div class="dcard-name" style="color:${di.c}">${dk} — ${di.h} <span style="font-size:13px;font-weight:400;color:var(--muted)">(${di.e})</span></div>
+      <div class="badge bg-${lv.c}">${lv.h}</div></div>
+      <div class="dcard-scores"><span>ציון גולמי: <strong>${raw}</strong>/120</span><span>T-Score: <strong>${t.toFixed(1)}</strong></span><span>אחוזון: <strong>${p}</strong></span></div>
+      <div class="bar-w"><div class="bar-f" style="width:${Math.max(2,p)}%;background:${di.c}"></div></div>`;
+    for(let i=1;i<=6;i++){
+      const fk=dk+i,fr=fs[fk],fn=ns[fk],ft=tScore(fr,fn.mean,fn.sd),fp=tPct(ft),fl=lvl(ft);
+      html+=`<div class="frow"><span class="fk" style="color:${di.c}">${fk}</span><span class="fn">${FH[fk]}</span>
+        <span class="fbar-w"><span class="fbar-f" style="width:${Math.max(3,fp)}%;background:${di.c}"></span></span>
+        <span class="fr">${fr}/20</span><span class="ft lv-${fl.c}">${ft.toFixed(0)}</span></div>`;
+    }
+    html+='</div>';
+  });
+
+  // Summary table
+  html+=`<div class="exp"><h3>טבלת ציונים מסכמת</h3><table class="etbl"><tr><th>סקאלה</th><th>ציון גולמי</th><th>T-Score</th><th>אחוזון</th><th>רמה</th></tr>`;
+  order.forEach(dk=>{
+    const raw=ds[dk],dn=ns[dk],t=tScore(raw,dn.mean,dn.sd),p=tPct(t),lv=lvl(t);
+    html+=`<tr style="font-weight:700;background:#f0f0ec"><td>${dk} — ${DI[dk].h}</td><td>${raw}</td><td>${t.toFixed(1)}</td><td>${p}</td><td class="lv-${lv.c}">${lv.h}</td></tr>`;
+    for(let i=1;i<=6;i++){
+      const fk=dk+i,fr=fs[fk],fn=ns[fk],ft=tScore(fr,fn.mean,fn.sd),fp=tPct(ft),fl=lvl(ft);
+      html+=`<tr><td style="padding-right:24px">${fk} ${FH[fk]}</td><td>${fr}</td><td>${ft.toFixed(1)}</td><td>${fp}</td><td class="lv-${fl.c}">${fl.h}</td></tr>`;
+    }
+  });
+  html+='</table></div>';
+  html+=`<div class="disc">שאלון IPIP-NEO-120 — פריטים בנחלת הכלל (Public Domain)<br>נורמות בינלאומיות מ-Johnson (2014) — N≈619,150<br>למטרות חינוכיות ומחקריות בלבד</div>`;
+
+  document.getElementById('res-container').innerHTML=html;
+  show('scr-results');
+  window.scrollTo({top:0,behavior:'smooth'});
+
+  // Send email
+  sendEmail(html);
+}
+
+async function sendEmail(reportHtml){
+  const statusEl=document.getElementById('email-status');
+  statusEl.innerHTML='<div class="email-status email-loading">שולח תוצאות למייל...</div>';
+  try{
+    const res=await fetch('/api/send-results',{
+      method:'POST',
+      headers:{'Content-Type':'application/json'},
+      body:JSON.stringify({
+        assessorEmail, respondentEmail: respondentEmail||undefined,
+        respondentName: respondentName||undefined,
+        htmlReport: reportHtml
+      })
+    });
+    const data=await res.json();
+    if(res.ok){
+      let msg='התוצאות נשלחו ל-'+assessorEmail;
+      if(respondentEmail) msg+=' ול-'+respondentEmail;
+      statusEl.innerHTML='<div class="email-status email-ok">✓ '+msg+'</div>';
+    } else {
+      statusEl.innerHTML='<div class="email-status email-err">⚠ '+data.error+'</div>';
+    }
+  }catch(e){
+    statusEl.innerHTML='<div class="email-status email-err">⚠ שגיאה בשליחה. ניתן להדפיס את הדף או לצלם מסך.</div>';
+  }
+}
+
+function show(id){document.querySelectorAll('.screen').forEach(s=>s.classList.remove('active'));document.getElementById(id).classList.add('active')}
+function restart(){answers={};sex='';age=0;page=0;respondentName='';assessorEmail='';respondentEmail='';
+  document.querySelectorAll('.sex-btn').forEach(b=>b.classList.remove('sel'));
+  document.getElementById('inp-age').value='';document.getElementById('inp-name').value='';
+  document.getElementById('inp-email-assessor').value='';document.getElementById('inp-email-respondent').value='';
+  document.getElementById('btn-start').disabled=true;document.getElementById('email-status').innerHTML='';
+  show('scr-welcome');window.scrollTo({top:0})}
+</script>
+</body>
+</html>
